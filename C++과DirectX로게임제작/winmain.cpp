@@ -90,4 +90,3 @@ bool CreateMainWindow(HINSTANCE hInstance, int nCmdShow)
 	return true;
 }
 
-//아무말아무말

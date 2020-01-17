@@ -1,3 +1,4 @@
+
 #define WIN32_LEAN_AND_MEAN
 //#include <atlstr.h>
 #include<windows.h>
@@ -89,4 +90,5 @@ bool CreateMainWindow(HINSTANCE hInstance, int nCmdShow)
 	UpdateWindow(hwnd); //본문과다름
 	return true;
 }
-
+// LPWTSTR CONST * char 호환하는법
+// 프로젝트 - 속성 - 고급 - 문자 집합 - 멀티 바이트로 변경

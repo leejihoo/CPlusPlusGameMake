@@ -89,3 +89,5 @@ bool CreateMainWindow(HINSTANCE hInstance, int nCmdShow)
 	UpdateWindow(hwnd); //본문과다름
 	return true;
 }
+
+//아무말아무말

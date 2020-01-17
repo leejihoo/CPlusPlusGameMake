@@ -9,7 +9,7 @@ LRESULT WINAPI WinProc(HWND, UINT, WPARAM, LPARAM);
 HINSTANCE hinst;
 
 const char CLASS_NAME[] = "WinMain";
-const char APP_TITLE[] = "C++∞˙DirectX∑Œ∞‘¿”¡¶¿€";
+const char APP_TITLE[] = "C++Í≥ºDirectXÎ°úÍ≤åÏûÑÏ†úÏûë";
 const int WINDOW_WIDTH = 400;
 const int WINDOW_HEIGHT = 400;
 //LPCWSTR LCLASS_NAME = CA2W(CLASS_NAME,949);
@@ -20,7 +20,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance,
 				   _In_ int       nCmdShow)
 {
 	MSG msg;
-	if (!CreateMainWindow(hInstance, nCmdShow)) //∫ªπÆ∞˙¥Ÿ∏ß
+	if (!CreateMainWindow(hInstance, nCmdShow)) //Î≥∏Î¨∏Í≥ºÎã§Î¶Ñ
 	{
 		return false;
 	}
@@ -64,15 +64,15 @@ bool CreateMainWindow(HINSTANCE hInstance, int nCmdShow)
 	wcx.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wcx.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
 	wcx.lpszMenuName = NULL;
-	wcx.lpszClassName = CLASS_NAME; // ∫ªπÆ∞˙ ¥Ÿ∏ß
+	wcx.lpszClassName = CLASS_NAME; // Î≥∏Î¨∏Í≥º Îã§Î¶Ñ
 	wcx.hIconSm = NULL;
 
 	if (RegisterClassEx(&wcx) == 0)
 		return false;
 
 	hwnd = CreateWindow(
-		CLASS_NAME, //∫ªπÆ∞˙ ¥Ÿ∏ß
-		APP_TITLE, //∫ªπÆ∞˙ ¥Ÿ∏ß
+		CLASS_NAME, //Î≥∏Î¨∏Í≥º Îã§Î¶Ñ
+		APP_TITLE, //Î≥∏Î¨∏Í≥º Îã§Î¶Ñ
 		WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT,
 		CW_USEDEFAULT,
@@ -86,8 +86,8 @@ bool CreateMainWindow(HINSTANCE hInstance, int nCmdShow)
 	if (!hwnd)
 		return false;
 	ShowWindow(hwnd, nCmdShow);
-	UpdateWindow(hwnd); //∫ªπÆ∞˙¥Ÿ∏ß
+	UpdateWindow(hwnd); //Î≥∏Î¨∏Í≥ºÎã§Î¶Ñ
 	return true;
 }
 
-//æ∆π´∏ªæ∆π´∏ª
+//ÏïÑÎ¨¥ÎßêÏïÑÎ¨¥Îßê
